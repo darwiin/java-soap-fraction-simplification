@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.darwi.in/simplifier"
+           targetNamespace="http://www.darwi.in/simplifier" elementFormDefault="qualified">
+
+    <xs:element name="SimplifyFractionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fraction" type="tns:Fraction"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="SimplifyFractionResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fraction" type="tns:Fraction"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="Fraction">
+        <xs:sequence>
+            <xs:element name="numerateur" type="xs:integer"/>
+            <xs:element name="denominateur" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
