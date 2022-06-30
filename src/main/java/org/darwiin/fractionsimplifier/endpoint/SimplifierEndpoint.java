@@ -11,7 +11,7 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
 @Endpoint
 public class SimplifierEndpoint {
-    private static final String NAMESPACE_URI = "http://www.darwi.in/simplifier";
+    private static final String NAMESPACE_URI = "https://java-soap-fraction-simplificat.herokuapp.com/fractions";
 
     private SimplifierService service;
 

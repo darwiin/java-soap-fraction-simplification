@@ -29,7 +29,7 @@ public class WSConfig extends WsConfigurerAdapter {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("SimplifyFractionPort");
         wsdl11Definition.setLocationUri("/ws");
-        wsdl11Definition.setTargetNamespace("http://www.darwi.in/simplifier");
+        wsdl11Definition.setTargetNamespace("https://java-soap-fraction-simplificat.herokuapp.com/fractions");
         wsdl11Definition.setSchema(fractionSchema);
         return wsdl11Definition;
     }
